@@ -11,7 +11,7 @@ package activity3;
  *    Uses advanced search for keywords 
  * </li></ul> 
  *    
- * @author Mr. T
+ * @author Carter Langbert
  * @version January 2017
  */
 public class Magpie3
@@ -47,10 +47,27 @@ public class Magpie3
 		else if (findKeyword(statement, "mother") >= 0
 				|| findKeyword(statement, "father") >= 0
 				|| findKeyword(statement, "sister") >= 0
+                                || findKeyword(statement, "mother") >= 0
+                                || findKeyword(statement, "mom") >= 0
+                                || findKeyword(statement, "dad") >= 0
+                                || findKeyword(statement, "son") >= 0
+                                || findKeyword(statement, "daughter") >= 0
 				|| findKeyword(statement, "brother") >= 0)
 		{
 			response = "Tell me more about your family.";
 		}
+                else if(statement.indexOf("Hello.") >= 0 || statement.indexOf("Hi.") >= 0 || statement.indexOf("Hey.") >= 0 || statement.indexOf("Hey") >= 0 || statement.indexOf("hey.") >= 0 || statement.indexOf("hey") >= 0 || statement.indexOf("Hello") >= 0 || statement.indexOf("hello") >= 0 || statement.indexOf("hello.") >= 0)
+                {
+                    response = "What's up?";
+                }
+                else if(statement.indexOf("dog") >= 0 || statement.indexOf("cat") >= 0 || statement.indexOf("hamster") >= 0)
+                {
+                    response = "You have a pet? Awesome!";
+                }
+                else if(statement.indexOf("Nothing much") >= 0 || statement.indexOf("nothing much") >= 0 || statement.indexOf("Nothing much.") >= 0)
+                {
+                    response = "That's too bad. There has to be something you can tell me!";
+                }
 		else
 		{
 			response = getRandomResponse();

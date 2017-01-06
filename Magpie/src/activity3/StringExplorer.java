@@ -7,7 +7,7 @@ package activity3;
 /**
  * A program to allow students to try out different 
  * String methods. 
-* @author Mr. T
+* @author Carter Langbert
  * @version January 2017
  */
 public class StringExplorer
